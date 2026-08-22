@@ -4,27 +4,29 @@ using UnityEngine.InputSystem;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] GameObject _object;
+    [SerializeField] GameObject objectPrefab;
 
     public void OnCameraUp(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             ToggleObjects();
+            //moveSpeed = 3f;
         }
     }
 
     void ToggleObjects()
     {
-        bool currentState = _object.activeSelf;
-        _object.SetActive(!currentState);
+        bool currentState = objectPrefab.activeSelf;
+        objectPrefab.SetActive(!currentState);
     }
 
     /*
      List of things to do (in order of importance)
-        1. Make it so that instead of a single object, and entire layer is effected
-        2. Add a slight delay to the action
-        3. Make player slower while camera is up
-        4. Create a UI for the camera coming up and down AND UI for when camera is up
+        (DONE)  1. Make it so that instead of a single object, and entire layer is effected
+        (DONE)  2. Add UI indication that camera is up
+                3. Add a slight delay to the action
+        (DONE)  4. Make player slower while camera is up
+                5. Create a UI for the camera coming up and down
     */
 }

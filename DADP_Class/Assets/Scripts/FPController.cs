@@ -70,10 +70,10 @@ public class FPController : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, pickupRange))
         {
             PickUpObject pickup = hit.collider.GetComponent<PickUpObject>();
-            if(pickup != null)
+            if (pickup != null)
             {
                 pickupText.text = pickup.gameObject.name;
-                return; 
+                return;
             }
         }
     }

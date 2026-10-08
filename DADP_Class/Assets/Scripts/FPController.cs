@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class FPController : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class FPController : MonoBehaviour
     public float pickupRange = 3f;
     public Transform holdPoint;
     private PickUpObject heldObject;
+    public TMP_Text pickupText;
 
     [Header("Throw Settings")]
     public float throwForce = 10f;
@@ -39,6 +41,9 @@ public class FPController : MonoBehaviour
     private Vector3 velocity; // Stores the player's current vertical movement, including gravity.
     private float verticalRotation = 0f;
 
+    public Behaviour disableScript;
+
+
     // Awake runs once when the GameObject is first loaded.
     private void Awake()
     {
@@ -47,6 +52,9 @@ public class FPController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        disableScript.enabled = false;
+
     }
     private void Update()
     {
@@ -56,6 +64,17 @@ public class FPController : MonoBehaviour
         if (heldObject != null)
         {
             heldObject.MoveToHoldPoint(holdPoint.position);
+        }
+
+        Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
+        if (Physics.Raycast(ray, out RaycastHit hit, pickupRange))
+        {
+            PickUpObject pickup = hit.collider.GetComponent<PickUpObject>();
+            if(pickup != null)
+            {
+                pickupText.text = pickup.gameObject.name;
+                return; 
+            }
         }
     }
 
@@ -169,6 +188,7 @@ public class FPController : MonoBehaviour
         {
             controller.height = standHeight;
             moveSpeed = originalMoveSpeed;
+
         }
     }
 

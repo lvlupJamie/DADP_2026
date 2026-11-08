@@ -17040,6 +17040,7 @@ GameObject:
   - component: {fileID: 207525256}
   - component: {fileID: 207525255}
   - component: {fileID: 207525254}
+  - component: {fileID: 207525259}
   m_Layer: 10
   m_Name: HealthPotion
   m_TagString: Untagged
@@ -17155,6 +17156,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &207525259
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207525253}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &235859556
 GameObject:
   m_ObjectHideFlags: 0
@@ -30604,6 +30621,78 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &431960635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.14800525
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.14800525
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.14800525
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.43
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000000037695997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.04186171
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99912345
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 175.202
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      propertyPath: m_Name
+      value: 'exporting_tut_boy '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 585962339}
+  m_SourcePrefab: {fileID: 100100000, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
 --- !u!1 &493719209
 GameObject:
   m_ObjectHideFlags: 0
@@ -33964,6 +34053,33 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &585962338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 00ebbe78b92eb54489dffe38b5485004, type: 3}
+  m_PrefabInstance: {fileID: 431960635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &585962339
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585962338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07bfcc2a44ed1104fa49dc202f156eb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &688858630
 GameObject:
   m_ObjectHideFlags: 0
@@ -38853,6 +38969,7 @@ GameObject:
   - component: {fileID: 809347242}
   - component: {fileID: 809347241}
   - component: {fileID: 809347240}
+  - component: {fileID: 809347244}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -38954,6 +39071,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &809347244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809347239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 2
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: dad4323b58b1ddc469f37da1f035373c, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!43 &814825691
 Mesh:
   m_ObjectHideFlags: 0
@@ -43286,6 +43435,7 @@ GameObject:
   - component: {fileID: 1740115590}
   - component: {fileID: 1740115589}
   - component: {fileID: 1740115588}
+  - component: {fileID: 1740115593}
   m_Layer: 10
   m_Name: InvisibiltyPotion
   m_TagString: Untagged
@@ -43401,6 +43551,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1740115593
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740115587}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1787148741
 GameObject:
   m_ObjectHideFlags: 0
@@ -45139,3 +45305,4 @@ SceneRoots:
   - {fileID: 156725495}
   - {fileID: 1654867957}
   - {fileID: 1315938388}
+  - {fileID: 431960635}
